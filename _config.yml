@@ -26,7 +26,7 @@ personal_post_count: 1
 google_analytics: UA-103598831-1
 github_username:  aarontr
 linkedin_username: aaron-rowe-7305b449
-gems: [bourbon, neat]
+gems: [bourbon, neat, jekyll-seo-tag]
 sass:
   sass_dir: _sass
 # Build settings
