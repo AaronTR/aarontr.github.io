@@ -162,15 +162,9 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    @include outer-container;
+*{
+    box-sizing: border-box;
 }
-
 
 
 /**

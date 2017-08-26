@@ -20,8 +20,8 @@
 
         .footer-col {
             font-size: 48px;
-            @include span-columns(3);
             text-align: center;
+            @include grid-column(3);
             
             a{
                 color: #444;
