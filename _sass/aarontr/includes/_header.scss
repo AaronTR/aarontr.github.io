@@ -7,7 +7,7 @@ $headerHeight: 80px;
   position: fixed;
   top: 0;
   z-index: 10;
-  left: 0;
+  display: block;
   width: 100%;
   box-shadow: black 1px;
   -webkit-box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.1);
@@ -92,13 +92,9 @@ $headerHeight: 80px;
                 }
             }
 
-            .trigger {
+            #main-menu {
                 clear: both;
                 display: none;
-
-                &.open{
-                    display: block;
-                }
             }
 
             .page-link {
@@ -112,4 +108,24 @@ $headerHeight: 80px;
             }
         }
     }
+}
+
+#sidr-main {
+    background: #97D8B2;
+}
+
+#sidr-main li {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+#sidr-main li a {
+    color: #fff !important;
+    text-decoration: none;
+    display: block;
+    padding: 25px;
+}
+
+#sidr-main ul {
+    margin: 0;
 }
