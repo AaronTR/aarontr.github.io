@@ -1,0 +1,30 @@
+.disqus-wrapper{
+  padding: 50px;
+  padding-top: 0px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 900px){
+      max-width: 900px;
+      padding: 0px;
+      margin: 0 auto;
+  }
+
+  #disqus_thread{
+    border-top: 1px solid;
+    padding-top: 50px;
+  }
+
+  .disqus_footer_cover{
+      background: #FEFEFA;
+      height: 110px;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+
+      @media screen and (min-width: 900px){
+        height: 60px;
+      }
+  }
+}

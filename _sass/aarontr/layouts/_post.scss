@@ -40,6 +40,12 @@
 
 .blog-post-container{
     .post-content{
+        @media screen and (min-width: 900px){
+            max-width: 772px;
+            margin: 0 auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
         .post-image{
             padding-top: 75px;
