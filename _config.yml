@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Explore With Me...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.rowemin-around.com" # the base hostname & protocol for your site
-travel_post_count: 4
+travel_post_count: 1
 work_post_count: 1
 personal_post_count: 1
 google_analytics: UA-103598831-1

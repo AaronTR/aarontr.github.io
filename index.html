@@ -28,48 +28,60 @@ layout: home-page
   </section>
   <section class="home-break-section">
     <div class="home-break">
-      <div class="icon-container">
-        <i class="fa fa-globe" aria-hidden="true"></i>
+      <div class="icon-wrapper">
+          <div id="icon-container-top" class="icon-container animated">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
       </div>
     </div>
-    <h2>So What's New?</h2>
+    <h2 class="animated">So What's New?</h2>
     <div class="home-break">
-      <div class="icon-container">
-        <i class="fa fa-globe" aria-hidden="true"></i>
+      <div class="icon-wrapper">
+        <div id="icon-container-bottom" class="icon-container animated">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
       </div>
     </div>
   </section>
   <section class="blog-section">
-    <div class="callout travel-callout">
-      <i class="fa fa-plane" aria-hidden="true"></i>
-      <h3>I've Been Busy Traveling Around...</h3>
-      <p>Click on one of these bad boys if you'd like to follow along.</p>
-      <div class="callout-content">
-        {% include posts-list.html listClass="home-listing" category=site.categories.travel hasFeatured=true postLimit=site.travel_post_count %}
+    <div class="travel-wrapper">
+        <div class="callout travel-callout">
+            <div class="callout-heading animated">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <h3>I've Been Busy Traveling Around...</h3>
+                <p>Click on one of these bad boys if you'd like to follow along.</p>
+            </div>
+            <div class="callout-content">
+              {% include posts-list.html listClass="home-listing" category=site.categories.travel postLimit=site.travel_post_count %}
+            </div>
+          </div>
+    </div>
+    <div class="work-wrapper">
+      <div class="callout work-callout">
+          <div class="callout-content">
+            {% include posts-list.html listClass="home-listing" category=site.categories.work postLimit=site.work_post_count %}
+          </div>
+          <div class="callout-heading animated">
+            <div class="callout-heading-wrapper">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <h3>...Building Internets...</h3>
+                <p>These ones here are full of coding goodness.</p>
+            </div>
+          </div>
       </div>
     </div>
-    <div class="minor-callout-wrapper">
-      <div class="callout work-callout">
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        <h3>...Building Internets...</h3>
-        <p>These ones here are full of coding goodness.</p>
-        <div class="callout-content">
-          {% include posts-list.html listClass="home-listing" category=site.categories.work postLimit=site.work_post_count %}
-        </div>
-      </div>
+    <div class="personal-wrapper">
       <div class="callout personal-callout">
-        <i class="fa fa-male" aria-hidden="true"></i>
-        <h3>...And trying to have a life.</h3>
-        <p>Just like in life, who knows what you'll find here?</p>
+        <div class="callout-heading animated">
+          <div class="callout-heading-wrapper">
+              <i class="fa fa-male" aria-hidden="true"></i>
+              <h3>...And trying to have a life.</h3>
+              <p>Just like in life, who knows what you'll find here?</p>
+          </div>
+        </div>
         <div class="callout-content">
           {% include posts-list.html listClass="home-listing" category=site.categories.personal postLimit=site.personal_post_count %}
         </div>
       </div>
-    </div>
-  </section>
-  <section class="contact-request">
-    <div class="contact-request-callout">
-      <h3>If all that wasn't enough for you, or if you're interested in working with me, you can always...</h3>
-      <i class="fa fa-arrow-down" aria-hidden="true"></i>
     </div>
   </section>

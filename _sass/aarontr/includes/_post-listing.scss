@@ -47,37 +47,85 @@
     top: 50%;
 }
 
-a.blog-link {
+.blog-link {
     position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    a{
+        color: #444;
+
+        &:hover{
+            color: $highlight-color;
+        }
+    }
 }
 
-.post-info {
-    margin: 15px;
-    background: rgba(151,0,0,0.25);
-    background: -moz-linear-gradient(left, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.1);
+.full-blog-list .blog-link.blog-card:not(.featured-link) h3 {
+    font-size: 1.5em;
+    line-height: 1em;
 }
 
-.post-info {
+.full-blog-list .blog-link.blog-card:not(.featured-link) span {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.full-blog-list .blog-link.blog-card:not(.featured-link) .back p {
+    right: 10%;
+    bottom: 5%;
+    font-size: 1.2em;
+}
+
+article.post .blog-link{
+    a{
+        color: #444;
+
+        &:hover{
+            color: $highlight-color;
+        }
+    }
+}
+
+.featured-link-container{
+    .cover {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    }
+}
+
+.post-info {
+    color: #444;
+    opacity: 0.8;
+    font-family: 'Caveat', cursive;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
+
+    .random-rotate{
+        -ms-transform: rotate(random(20) - 10 + deg); /* IE 9 */
+        -webkit-transform: rotate(random(20) - 10 + deg); /* Safari */
+        transform: rotate(random(20) - 10 + deg);
+    }
 }
 
-.post-info {
-    color: #FEFEFA;
+.back .post-info p {
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    font-size: 1.5em;
 }
 
 .info-wrapper {
     padding: 50px;
-    text-align: center;
-    flex-basis: 100%;
+    text-align: left;
+    flex-basis: 75%;
 
     @include media-query($small-width){
         padding: 25px;

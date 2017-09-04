@@ -15,7 +15,16 @@
   <script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
 
   <script type="text/javascript" src="{{ "/js/aarontr.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/js/parallax.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/js/jquery.flip.min.js" | prepend: site.baseurl }}"></script>
   <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+  
   {% if site.google_analytics and site.environment == 'prod' %}
     {% include analytics.html %}
   {% endif %}

@@ -1,5 +1,44 @@
+.post-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.full-blog-list{
+    .blog-link.blog-card {
+        flex-basis: 33%;
+    }
+}
+
+.featured-link-container {
+    overflow: hidden;
+}
+
+.featured-link-container {
+    position: relative;
+}
+
+.latest-posts .featured-link-container h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.featured-link-container
+ .highlight {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    background: #97D8B2;
+    transform: rotate(45deg);
+}
+
 .latest-posts{
-    &:not(.home-listing) .featured-link-container{
+    max-width: 1200px;
+    margin: auto;
+
+    .featured-link-container{
         padding: 50px;
         margin-bottom: 50px;
 
@@ -10,8 +49,8 @@
     }
 
     .featured-link-container {
-        background: #97D8B2;
-        flex-basis: 100%;
+        flex-basis: 85%;
+        margin: auto;
 
         h2{
             text-align: center;
@@ -32,31 +71,6 @@
     &.blog-page-posts{
         flex-wrap: wrap;
         margin-bottom: 50px;
-
-        a.blog-link:not(.featured-link) {
-            flex-basis: 50%;
-
-            @include media-query($medium-width) {
-                flex-basis: 80%;
-                margin: auto;
-            }
-
-            @include media-query($small-width) {
-                flex-basis: 90%;
-            }
-        }
-
-        .blog-link{
-            .post-info{
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                display: flex;
-                align-items: center;
-            }
-        }
     }
 }
 
@@ -78,39 +92,8 @@
     }
 }
 
-.blog-link:not(.featured-link) h3 {
-    font-size: 2em;
-    line-height: 1em;
-
-    @include media-query($super-small-width){
-        font-size: 1.5em;
-    }
-}
-
-
-.blog-link:not(.featured-link) .post-info span {
-    font-size: 1em;
-    line-height: 1em;
-
-    @include media-query($super-small-width){
-        font-size: 0.9em;
-    }
-}
-
-.blog-link:not(.featured-link) .post-break i {
-    font-size: 1em;
-
-    @include media-query($super-small-width){
-        font-size: 0.9em;
-    }
-}
 .latest-posts {
     display: flex;
-}
-
-.latest-posts a {
-    display: inline-block;
-    padding: 15px;
 }
 
 .blog-list{
