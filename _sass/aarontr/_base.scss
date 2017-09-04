@@ -166,6 +166,11 @@ pre {
     box-sizing: border-box;
 }
 
+a, a *{
+    transition: all ease-in-out .15s;
+    text-decoration: none !important;
+}
+
 li{
     list-style: none;
 }

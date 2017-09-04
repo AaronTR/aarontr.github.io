@@ -25,5 +25,40 @@
             e.stopPropagation();
         });
 
+        $('.about-section').waypoint(function(direction){
+            $('.home-break-section h2').addClass('fadeIn');
+            $('#icon-container-top').addClass('fadeInLeft');
+            $('#icon-container-bottom').addClass('fadeInRight');
+        },{
+            offset: '50%'
+        });
+
+        $('.travel-callout').waypoint(function(direction){
+            $('.travel-callout .callout-heading').addClass('fadeInLeft');
+        },{
+            offset: '66%'
+        });
+
+        $('.work-callout').waypoint(function(direction){
+            $('.work-callout .callout-heading').addClass('fadeInRight');
+        },{
+            offset: '66%'
+        });
+
+        $('.personal-callout').waypoint(function(direction){
+            $('.personal-callout .callout-heading').addClass('fadeInLeft');
+        },{
+            offset: '66%'
+        });
+
+        $('.blog-card').flip({'trigger': 'click'});
+        $('.blog-card a').on('click', function(e){
+            e.stopPropagation();
+        });
+        $('.blog-card').on('click', function(e){
+            e.preventDefault();
+            $(this).find('.back').toggleClass('visible');
+        });
+
     });
 })(jQuery);

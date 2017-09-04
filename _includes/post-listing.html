@@ -1,33 +1,36 @@
 {% if(include.isFeatured) %}
 <div class="featured-link-container">
+    <div class="highlight"></div>
+    <div class="cover"></div>
 {% if(include.featuredHeader) %}
-<h2><i class="fa fa-star" aria-hidden="true"></i>Featured Post<i class="fa fa-star" aria-hidden="true"></i></h2>
+<h2><i class="fa fa-star" aria-hidden="true"></i>Featured</h2>
 {% endif %}
-<a class="blog-link featured-link" href="{{post.url | prepend: site.baseurl}}">
+<div class="blog-link blog-card featured-link" >
 {% else %}
-<a class="blog-link" href="{{post.url | prepend: site.baseurl}}">
+<div class="blog-link blog-card" >
 {% endif %}
-    <div class="push-pin">
-        <div class="top">
-        </div>
-        <div class="middle">
-        </div>
-        <div class="bottom">
-        </div>
-    </div>
-    <img src="{{post.images[0].url | prepend: site.baseurl}}" alt="post.images[0].alt">
-    <div class="post-info">
-        <div class="info-wrapper">
-        <h3>{{post.title}}</h3>
-        <div class="post-break">
-            <div class="icon-container">
-            <i class="fa fa-globe" aria-hidden="true"></i>
+    <div class="front">
+        <div class="push-pin">
+            <div class="top">
+            </div>
+            <div class="middle">
+            </div>
+            <div class="bottom">
             </div>
         </div>
-        <span>{{post.description}}</span>
+        <div class="front-cover"></div>
+        <img src="{{post.images[0].url | prepend: site.baseurl}}" alt="post.images[0].alt">
+    </div>
+    <div class="back">
+        <div class="post-info">
+            <feature class="info-wrapper random-rotate">
+                <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+                <span>{{post.description}}</span>
+            </feature>
+            <p><a href="{{post.url | prepend: site.baseurl}}">Read More.</a></p>
         </div>
     </div>
-</a>
+</div>
 {% if(include.isFeatured) %}
 </div>
 {% endif %}
