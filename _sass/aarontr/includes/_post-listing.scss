@@ -127,6 +127,10 @@ article.post .blog-link{
     text-align: left;
     flex-basis: 75%;
 
+    @include media-query($large-width){
+        flex-basis: 85%;
+    }
+
     @include media-query($small-width){
         padding: 25px;
     }

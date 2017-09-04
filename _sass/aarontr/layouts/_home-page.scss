@@ -3,8 +3,12 @@
     .callout{
         padding: 75px 30px;
 
+        @include media-query($medium-large){
+            padding: 50px 30px;
+        }
+    
         @include media-query($small-width){
-            padding: 25px 15px;
+            padding: 50px 25px;
         }
     }
 
@@ -100,13 +104,41 @@
     }
 }
 
-.callout-heading{
+.callout .callout-heading{
     flex-basis: 50%;
     align-self: center;
+    padding: 10px;
+
+    @include media-query($medium-width){
+        flex-basis: 33%;
+
+        h3{
+            font-size: 1.5em;
+        }
+
+        i{
+            font-size: 34px;
+            margin-bottom: 10px;  
+        }
+    }
+
+    @include media-query($small-width){
+        flex-basis: 100%;
+        padding-top: 0px;
+    }
 }
 
-.callout-content{
+.callout .callout-content{
     flex-basis: 50%;
+
+    @include media-query($medium-width){
+        flex-basis: 66%;
+    }
+
+    @include media-query($small-width){
+        flex-basis: 100%;
+        padding-top: 0px;
+    }
 }
 
 .travel-callout{
@@ -123,11 +155,10 @@
     margin: auto;
     flex-basis: 100%;
     background: #FEFEFA;
-}
 
-.callout-heading-wrapper{
-    display: inline-block;
-    padding: 15px;
+    @include media-query($small-width){
+        flex-direction: column-reverse;
+    }
 }
 
 .blog-link:hover{
@@ -204,19 +235,6 @@
     flex-basis: 100%;
 }
 
-@include media-query($medium-width){
-    .home-content .callout.work-callout {
-    flex-basis: 100%;
-    border: none;
-  }
-
-  .home-content .callout.personal-callout {
-    flex-basis: 100%;
-    border: none;
-    border-top: 50px solid #97D8B2;
-  }
-}
-
 .callout.travel-callout, .callout.personal-callout {
     color: #FEFEFA;
 
@@ -248,12 +266,16 @@
   margin-bottom: 5px;
 }
 
-.callout h3 {
+.callout-heading h3 {
     font-size: 2em;
 
     @include media-query($small-width){
         font-size: 1.5em;
     }
+}
+
+.callout .blog-link h3 {
+    font-size: 2em;
 }
 
 .blog-link span {
