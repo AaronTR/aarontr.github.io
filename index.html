@@ -26,62 +26,29 @@ layout: home-page
       </div>
     </div>
   </section>
-  <section class="home-break-section">
-    <div class="home-break">
-      <div class="icon-wrapper">
-          <div id="icon-container-top" class="icon-container animated">
-              <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-      </div>
-    </div>
-    <h2 class="animated">So What's New?</h2>
-    <div class="home-break">
-      <div class="icon-wrapper">
-        <div id="icon-container-bottom" class="icon-container animated">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-          </div>
-      </div>
-    </div>
-  </section>
   <section class="blog-section">
     <div class="travel-wrapper">
         <div class="callout travel-callout">
-            <div class="callout-heading animated">
-                <i class="fa fa-plane" aria-hidden="true"></i>
-                <h3>I've Been Busy Traveling Around...</h3>
-                <p>Click on one of these bad boys if you'd like to follow along.</p>
-            </div>
+            <h2 class="animated">What's New From the Blog?</h2>
             <div class="callout-content">
-              {% include posts-list.html listClass="home-listing" category=site.categories.travel postLimit=site.travel_post_count %}
+              {% include posts-list.html category=site.categories.all postLimit=3 %}
             </div>
           </div>
     </div>
-    <div class="work-wrapper">
-      <div class="callout work-callout">
-          <div class="callout-content">
-            {% include posts-list.html listClass="home-listing" category=site.categories.work postLimit=site.work_post_count %}
-          </div>
-          <div class="callout-heading animated">
-            <div class="callout-heading-wrapper">
-                <i class="fa fa-laptop" aria-hidden="true"></i>
-                <h3>...Building Internets...</h3>
-                <p>These ones here are full of coding goodness.</p>
+  </section>
+  <section class="where-section blog-section">
+    <div class="where-wrapper">
+        <div class="callout where-callout">
+            <h2> Where Am I Now?</h2>
+            <div class="callout-content">
+              <div id="where_am_i_map"></div>
+              <div class="where-location">
+                <div class="location-wrapper">
+                  <h3 class="where-location-city">Ao Nam Mao</h3>
+                  <h4 class="where-location-country">Thailand</h4>
+                </div>
+              </div>
             </div>
           </div>
-      </div>
-    </div>
-    <div class="personal-wrapper">
-      <div class="callout personal-callout">
-        <div class="callout-heading animated">
-          <div class="callout-heading-wrapper">
-              <i class="fa fa-male" aria-hidden="true"></i>
-              <h3>...And trying to have a life.</h3>
-              <p>Just like in life, who knows what you'll find here?</p>
-          </div>
-        </div>
-        <div class="callout-content">
-          {% include posts-list.html listClass="home-listing" category=site.categories.personal postLimit=site.personal_post_count %}
-        </div>
-      </div>
     </div>
   </section>

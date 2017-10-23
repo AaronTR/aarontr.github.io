@@ -12,8 +12,14 @@
         }
     }
 
-    .travel-wrapper, .personal-wrapper{
-        background: #97D8B2;
+    .travel-wrapper .travel-callout .callout-content
+    .blog-link {
+        flex-basis: 30%;
+
+        @include media-query($small-width){
+            flex-basis: 100%;
+            margin-top: 25px;
+        }
     }
         
 
@@ -128,24 +134,66 @@
     }
 }
 
-.callout .callout-content{
-    flex-basis: 50%;
-
-    @include media-query($medium-width){
-        flex-basis: 66%;
-    }
-
-    @include media-query($small-width){
-        flex-basis: 100%;
-        padding-top: 0px;
-    }
-}
-
 .travel-callout{
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+}
+
+.where-section .where-wrapper{
+    background: #97D8B2;
+
+    h2{
+        color: #FEFEFA;
+    }
+
+    .callout-content{
+        display: flex;
+        flex-wrap: wrap;
+
+        .where-location{
+            flex-basis: 40%;
+            align-content: center;
+            align-items: center;
+            display: flex;
+
+            @include media-query($small-width){
+                flex-basis: 100%;
+                margin-top: 25px;
+            }
+
+            .location-wrapper{
+                align-self: center;
+                margin: auto;
+            }
+
+            .where-location-city, .where-location-country{
+                text-align: center;
+                color: #FEFEFA;
+            }
+
+            .where-location-city{
+                font-size: 1.5em;
+            }
+
+            .where-location-country{
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+        }
+
+        #where_am_i_map{
+            flex-basis: 60%;
+            height: 350px;
+            width: 100%;
+            margin: auto;
+
+            @include media-query($small-width){
+                flex-basis: 100%;
+            }
+        }
+    }
 }
 
 .callout.work-callout{
@@ -236,7 +284,6 @@
 }
 
 .callout.travel-callout, .callout.personal-callout {
-    color: #FEFEFA;
 
     p{
         color: rgba(255,255,255,0.6);
@@ -299,7 +346,6 @@
 
 .blog-section h2 {
     margin-bottom: 50px;
-    width: 50%;
     /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
