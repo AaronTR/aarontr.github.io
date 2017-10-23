@@ -4,7 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% seo %}
-  
+
+  {% if page.images %}
+    <meta content="{{ page.images[0].url | prepend: site.baseurl }}" property="og:image">
+  {% endif %}
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.bare.css">
