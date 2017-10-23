@@ -61,7 +61,7 @@ Just past all the scooters I slip into a side street and, BAM! Temple.
 <img src="/assets/images/posts/living-chiang-mai/alley-temple-min.jpg">
 </div>
 
-As I’ve mentioned before (link to previous post), you can’t go more than a couple blocks without seeing one. Not all of them are grand and majestic, though. This temple is small, nestled away in a quiet neighborhood alley. The tackiness of this temple always fascinated me. It’s gaudy and out of place. It’s extremely glittery and always has a sign staked in the front yard advertising foot massages. If you happen to pass by at night, you’ll notice an eerie green glow illuminating the Buddha inside, making him look like the Wizard of Oz. Nevertheless, there are often monks either cleaning or meditating inside so I suppose it’s just as functional as the rest of them.
+[As I’ve mentioned before](https://www.rowemin-around.com/blog/top-5-best-se-asia/), you can’t go more than a couple blocks without seeing one. Not all of them are grand and majestic, though. This temple is small, nestled away in a quiet neighborhood alley. The tackiness of this temple always fascinated me. It’s gaudy and out of place. It’s extremely glittery and always has a sign staked in the front yard advertising foot massages. If you happen to pass by at night, you’ll notice an eerie green glow illuminating the Buddha inside, making him look like the Wizard of Oz. Nevertheless, there are often monks either cleaning or meditating inside so I suppose it’s just as functional as the rest of them.
 
 I continue past the temple and a block later I’m at the co-working space. It’s called Punspace. 
 
