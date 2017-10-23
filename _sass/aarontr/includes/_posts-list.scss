@@ -114,13 +114,11 @@
 
 .latest-posts {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blog-list{
   text-align: left;
-}
-
-.latest-posts {
-    flex-wrap: wrap;
 }
 
