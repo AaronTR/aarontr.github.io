@@ -123,6 +123,22 @@ article.post{
         margin-bottom: 15px;
     }
 
+    .quad-image-block{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 0;
+        width: 80%;
+
+        img{
+            width: 50%;
+        }
+
+        @include media-query($medium-width){
+            width: 100%;
+        }
+    }
+
     .post-image-insert {
         margin: auto;
         margin-top: 50px;
